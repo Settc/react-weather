@@ -1,4 +1,4 @@
-import "./style.css"
+import "./style.scss"
 import { useState } from "react"
 
 function Card(props) {
@@ -16,7 +16,7 @@ function Card(props) {
     
     return (
         <div className="card">
-           <p>{location.name}</p>
+           <h1 id="cardCity">{location.name}</h1>
            <p>{location.region}</p>
            <p>{current.temp_f}</p>
         </div>

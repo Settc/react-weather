@@ -1,6 +1,6 @@
 import Card from "./components/Card/Card"
 import Search from "./components/Search/Search"
-import './App.css'
+import './App.scss'
 import Axios from "axios"
 import { useEffect, useState } from "react"
 const key = import.meta.env.VITE_API_KEY
@@ -8,7 +8,7 @@ const key = import.meta.env.VITE_API_KEY
 function App() {
   
   const [weather, setWeather] = useState([])
-  const [city, setCity] = useState("New York")
+  const [city, setCity] = useState("Columbus")
 
   useEffect(() => {
       Axios.get(`https://api.weatherapi.com/v1/current.json?key=${key}&q=${city}`)
