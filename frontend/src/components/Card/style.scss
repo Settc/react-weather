@@ -19,6 +19,31 @@
     width: 200px;
     height: 320px;
     border-radius: 5px;
-    border: 2px solid rgba(194, 236, 236, .3) ;
+    border: 2px solid rgba(194, 236, 236, .3);
+    
 }
 
+#cardRegion {
+  margin-left: 15px;
+  margin-top: -20px;
+}
+
+#cardCity, #cardRegion {
+  margin-left: 10px;
+  color: rgba(5, 5, 5, .5);
+}
+
+#icon {
+  margin-left: 50px;
+  height: 6em;
+}
+
+#temp {
+  font-family: 'Miriam Libre', sans-serif;
+  color: rgba(5, 5, 5, .5);
+  margin-top: 0px;  
+  text-align: center;
+  font-size: 5em;
+  filter: drop-shadow(0 0 0.75rem white);
+  
+}

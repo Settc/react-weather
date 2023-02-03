@@ -17,8 +17,9 @@ function Card(props) {
     return (
         <div className="card">
            <h1 id="cardCity">{location.name}</h1>
-           <p>{location.region}</p>
-           <p>{current.temp_f}</p>
+           <h2 id="cardRegion">{location.region}</h2>
+           <img id="icon" src={current.condition.icon}></img>
+           <h2 id="temp">{current.temp_f}</h2>
         </div>
         
     )
