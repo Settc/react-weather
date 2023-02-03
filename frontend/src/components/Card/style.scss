@@ -39,6 +39,11 @@
 #icon {
   margin-left: 50px;
   height: 6em;
+  
+}
+
+#condition {
+  text-align: center;
 }
 
 #temp {
@@ -53,15 +58,15 @@
 
 #maxtemp, #mintemp {
   font-family: 'Miriam Libre', sans-serif;
-  color: rgba(5, 5, 5, .5);
-  margin-top: 0px;
-  font-size: 2em;
+  color: rgba(5, 5, 5, .5);  
+  font-size: 3em;
   filter: drop-shadow(0 0 0.75rem white);
   display: inline;
+  padding: 5px;
 }
 
 #maxtemp {
-  margin-left: 55px;
+  margin-left: 25px;
   margin-right: 15px;
   color: red;
   filter: drop-shadow(0 -2mm 4mm rgb(255, 11, 11));
