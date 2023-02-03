@@ -1,10 +1,10 @@
 import React from 'react'
 import "./style.css"
 
-function Search() {
+function Search( {cityName} ) {
   return (
     <div>
-        <label for="search">Search Cities</label>
+        <h1 className="cityName">{cityName}</h1>        
         <input type="search" id="search"></input>
     </div>
   )

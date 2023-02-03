@@ -1,16 +1,18 @@
-label {
-    margin-left: 5px;
-    margin-right: 10px;    
-    font-weight: 600;
-}
-
 input {
+    width: 20em;
+    height: 30px;
     border-radius: 5px;
-    margin-top: 20px;
+    /* /* margin-right: 19px; */
+    margin-top: 92px;
+    display: block;
+    
+    position: absolute;
 }
 
-label, input {
-    display: block;
+.cityName {
+    display: inline;
     position: absolute;
-    
+    margin-top: 30px;
+    font-size: 6em;
+
 }

@@ -15,6 +15,9 @@
   }
 
 body {
-    background-image: url("./assets/courtney-cook-HClKQKUodF4-unsplash.jpg");
+    background-image: url("./assets/courtney-cook-HClKQKUodF4-unsplash.jpg"); 
 
+    @include for-big-desktop-up() {
+      background-size: 100vmax;
+    }
 }

@@ -9,6 +9,7 @@ function Card(props) {
            <div id="dateContainer">
             <h4 id="month">{props.month}</h4>
             <h4 id="date">{props.date}</h4>
+            <h4 id="ordinal">{props.ordinal}</h4>
            </div>
            <img id="icon" src={props.icon}></img>
            <h2 id="condition">{props.condition}</h2>
