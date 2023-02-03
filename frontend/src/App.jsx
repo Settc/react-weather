@@ -5,11 +5,12 @@ import { useEffect, useState } from "react"
 const key = import.meta.env.VITE_API_KEY
 
 function App() {
-
+  
   const [weather, setWeather] = useState([])
+  const [city, setCity] = useState("New York")
 
   useEffect(() => {
-      Axios.get(`https://api.weatherapi.com/v1/current.json?key=${key}&q=Flagstaff`)
+      Axios.get(`https://api.weatherapi.com/v1/current.json?key=${key}&q=${city}`)
             .then((response) => {
               setWeather(response.data)
               console.log(response.data)              
