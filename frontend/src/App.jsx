@@ -13,24 +13,43 @@ function App() {
 
   const currentQuery = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${city}`
   const forecastQuery = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}&days=5`
+
+ 
+
+  
   
   useEffect(() => {
       Axios.get(forecastQuery)
             .then((response) => {
-              setWeather(response.data)
-              console.log(response.data)              
+              setWeather(response.data.forecast.forecastday)
+              console.log(response.data.forecast.forecastday)              
             }).catch(error => {
               console.log(error)
             })
   }, [])
 
+  
 
+  
+  
+
+  const forecast = weather.map((day, index) => {
+    return <Card key={index}
+                 dayOfTheWeek={weather[index].date}           
+                 icon={weather[index].day.condition.icon} 
+                 maxtemp={weather[index].day.maxtemp_f} 
+                 mintemp={weather[index].day.mintemp_f} 
+                 />
+                })
+  
+
+  if (weather) {
   return (
     <div className="App">
       <Search />
-      <Card forecast={weather}/>
+      {forecast}
     </div>
-  )
+  )}
 }
 
 export default App
