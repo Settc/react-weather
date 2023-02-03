@@ -31,7 +31,7 @@ function App() {
             }).catch(error => {
               console.log(error)
             })
-  }, [])  
+  }, [city])  
 
   // mapping the response data in order to dynamically generate card components
 
@@ -109,12 +109,18 @@ function App() {
                  mintemp={weather[index].day.mintemp_f} 
                  />
     })
+
   
+    const currentCity = city;
 
   if (weather) {
   return (
     <div className="App">
-      <Search cityName={city}/>
+      <Search 
+        cityName={currentCity}  
+        placeholder={"Search for a city..."}
+        changeCity={city => setCity(city)}
+        />
       {forecast}
     </div>
   )}

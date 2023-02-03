@@ -9,6 +9,11 @@ input {
     position: absolute;
 }
 
+.searchIcon {
+    position: relative;
+    
+}
+
 .cityName {
     display: inline;
     position: absolute;
