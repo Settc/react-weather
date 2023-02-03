@@ -15,7 +15,7 @@ function Card(props) {
     }
     
     return (
-        <div>
+        <div className="card">
            <p>{location.name}</p>
            <p>{location.region}</p>
            <p>{current.temp_f}</p>

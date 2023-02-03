@@ -1,4 +1,5 @@
 import Card from "./components/Card/Card"
+import Search from "./components/Search/Search"
 import './App.css'
 import Axios from "axios"
 import { useEffect, useState } from "react"
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <div className="App">
+      <Search />
       <Card forecast={weather}/>
     </div>
   )
